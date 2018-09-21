@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.diva.appdemo.Activity.MainActivity">
+
+<Button
+    android:id="@+id/btn_getAppInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/get_appinfo"/>
+
+    <Button
+        android:id="@+id/btn_getStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_studentinfo"/>
+    <Button
+        android:id="@+id/btn_saveStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_studentinfo"/>
+    <Button
+        android:id="@+id/btn_searchStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_studentinfo"/>
+    <Button
+        android:id="@+id/btn_dropStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drop_studentinfo"/>
+    <Button
+        android:id="@+id/btn_toLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tologin"/>
+    <Button
+    android:id="@+id/btn_sendNotification"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sendnotificaiton"/>
+    <Button
+        android:id="@+id/btn_startIntentService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startintentservice"/>
+    <Button
+        android:id="@+id/btn_popWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_popWindow"/>
+    <Button
+        android:id="@+id/btn_qrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_qrCode"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bubble_layout_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/id_tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/chatmessage_time_background"
+        android:text="2016-04-03 12:33:20"
+        android:textColor="@color/chatmessage_time_text"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvTime">
+        <LinearLayout
+            android:id="@+id/id_linear_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/id_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_female" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bubble2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/id_linear_info">
+
+            <TextView
+                android:id="@+id/message_TextView"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
