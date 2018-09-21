@@ -24,4 +24,9 @@
     <string name="password_">密码：</string>
     <string name="username_">用户名：</string>
     <string name="log_in">LOG IN</string>
+    <string name="go_to_apiTest">GoToApi</string>
+    <string name="param1">param1</string>
+    <string name="param2">param2</string>
+    <string name="network_test">post</string>
+    <string name="param3">param3</string>
 </resources>

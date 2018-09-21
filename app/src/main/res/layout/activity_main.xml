@@ -58,4 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_qrCode"/>
+    <Button
+        android:id="@+id/btn_apiTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_apiTest"/>
 </LinearLayout>

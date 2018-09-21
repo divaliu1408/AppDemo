@@ -41,7 +41,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 @ContentView(R.layout.activity_main)
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
     @ViewInject(R.id.btn_getAppInfo)
     Button btnGetAppInfo;
 
@@ -60,6 +60,8 @@ public class MainActivity extends BaseActivity {
             Button btnStartIntentService;
     @ViewInject(R.id.btn_qrCode)
     Button btnGoToQRCode;
+    @ViewInject(R.id.btn_apiTest)
+            Button btnGoToApiTest;
 
 
     Retrofit retrofit;
@@ -242,7 +244,11 @@ private void goToQRCode(View view){
     Intent intent = new Intent(MainActivity.this,QRCodeActivity.class);
     startActivity(intent);
 }
-
+    @Event(R.id.btn_apiTest)
+    private void goToApiTest(View view){
+        Intent intent = new Intent(MainActivity.this,apiTestActivity.class);
+        startActivity(intent);
+    }
 
 }
 
