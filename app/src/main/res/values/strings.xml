@@ -29,4 +29,7 @@
     <string name="param2">param2</string>
     <string name="network_test">post</string>
     <string name="param3">param3</string>
+    <string name="go_to_idCard">goToIdCard</string>
+    <string name="show_info">show</string>
+    <string name="read_idInfo">read</string>
 </resources>

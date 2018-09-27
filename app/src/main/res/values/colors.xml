@@ -39,4 +39,9 @@
     //聊天记录
     <color name="chatmessage_time_background">#d4d5df</color>
     <color name="chatmessage_time_text">#FFFFFFFF</color>
+
+    //idCard
+    <color name="pressed">#5B5B5B</color>
+    <color name="no_pressed">#B4CDCD</color>
+    <color name="app_item">#888888</color>
 </resources>

@@ -14,14 +14,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.diva.appdemo.Manager.BaseActivity;
 import com.diva.appdemo.Manager.MyApplication;
 import com.diva.appdemo.Interface.NetworkInterface;
-import com.diva.appdemo.R;
+
 import com.diva.appdemo.Entity.AppInfo;
 import com.diva.appdemo.Entity.Student;
 import com.diva.appdemo.Entity.StudentInfo;
+import com.diva.appdemo.R;
 import com.diva.appdemo.Service.MyIntentService;
+import com.huashi.bluetooth.IDCardInfo;
 
 import org.xutils.DbManager;
 import org.xutils.db.sqlite.WhereBuilder;
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnGoToQRCode;
     @ViewInject(R.id.btn_apiTest)
             Button btnGoToApiTest;
+    @ViewInject(R.id.btn_idCard)
+            Button btnGoToIdCard;
 
 
     Retrofit retrofit;
@@ -247,6 +250,11 @@ private void goToQRCode(View view){
     @Event(R.id.btn_apiTest)
     private void goToApiTest(View view){
         Intent intent = new Intent(MainActivity.this,apiTestActivity.class);
+        startActivity(intent);
+    }
+    @Event(R.id.btn_idCard)
+    private void goToIdCard(View view){
+        Intent intent = new Intent(MainActivity.this,IDCReaderActivity.class);
         startActivity(intent);
     }
 

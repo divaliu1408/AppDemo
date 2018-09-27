@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.diva.appdemo.Adapter.FriendAdapter;
+import com.diva.appdemo.Entity.Info;
 import com.diva.appdemo.Manager.BaseActivity;
 import com.diva.appdemo.R;
 import com.diva.appdemo.Service.MyService;
@@ -234,9 +235,15 @@ public class FriendsActivity extends BaseActivity implements AdapterView.OnItemC
                 break;
             case R.id.showInfoBtn:
                 MyService.showInfo("show:");
+                showInfo();
             default:
                 break;
         }
+    }
+
+    private void showInfo() {
+        Log.e(TAG, "showInfo: addr = "+ Info.getInfo_Addr()+",name="+Info.getInfo_PeopleName()
+                +",check="+Info.isInfo_check()+",iDCard="+Info.getInfo_IDCard());
     }
 
 

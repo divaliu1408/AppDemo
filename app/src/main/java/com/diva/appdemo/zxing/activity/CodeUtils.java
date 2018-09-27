@@ -132,7 +132,7 @@ public class CodeUtils {
             //容错级别
             hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
             //设置空白边距的宽度
-            hints.put(EncodeHintType.MARGIN, 0);
+//            hints.put(EncodeHintType.MARGIN, 0);
             BitMatrix bitMatrix = new QRCodeWriter().encode(text, BarcodeFormat.QR_CODE, w, h, hints);
             int[] pixels = new int[w * h];
             for (int y = 0; y < h; y++) {

@@ -21,16 +21,16 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
-import android.widget.Toast;
+
 
 import com.diva.appdemo.Activity.ChatActivity2;
 import com.diva.appdemo.Activity.LoginActivity;
-import com.diva.appdemo.Manager.BaseActivity;
+
 import com.diva.appdemo.Manager.ChatRecordDB;
 import com.diva.appdemo.R;
 import com.diva.appdemo.Utils.MyXMPPTCPConnection;
 import com.diva.appdemo.Utils.NetworkUtil;
-import com.diva.appdemo.model.Friend;
+
 
 import org.jivesoftware.smack.ConnectionListener;
 import org.jivesoftware.smack.SmackException;

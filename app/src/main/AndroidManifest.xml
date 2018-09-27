@@ -6,6 +6,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".Manager.MyApplication"
@@ -26,7 +30,7 @@
         <activity android:name=".Activity.LoginActivity" />
         <activity
             android:name=".Activity.ChatActivity2"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
         <activity android:name=".Activity.PopupWindowActivity" />
         <activity android:name=".Activity.QRCodeActivity" />
         <activity android:name=".Activity.ScanCodeActivity" />
@@ -38,7 +42,15 @@
             android:exported="true" />
         <service android:name=".Service.MyIntentService" />
 
-        <activity android:name=".Activity.apiTestActivity"></activity>
+        <activity android:name=".Activity.apiTestActivity" />
+
+        <service
+            android:name=".Service.BlueToothService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Activity.IDCardActivity" />
+        <activity android:name=".Activity.IDCReaderActivity"></activity>
     </application>
 
 </manifest>

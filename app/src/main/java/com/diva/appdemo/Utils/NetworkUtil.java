@@ -4,14 +4,13 @@ import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.diva.appdemo.Manager.BaseActivity;
-import com.diva.appdemo.Service.MyService;
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.security.PublicKey;
+
 
 /**
  * Created by 刘迪 on 2018/9/19 17:36.
